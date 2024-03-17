@@ -1,24 +1,24 @@
 interface ILogs {
-  timestamp: string;
-  msg: string;
+    timestamp: string;
+    msg: string;
 }
 
 class Logger {
-  public logs: ILogs[];
+    public logs: ILogs[];
 
-  constructor() {
-    this.logs = [];
-  }
+    constructor() {
+        this.logs = [];
+    }
 
-  get count() {
-    return this.logs.length;
-  }
+    get count() {
+        return this.logs.length;
+    }
 
-  log(msg: string) {
-    const timestamp = new Date().toISOString();
-    this.logs.push({ msg, timestamp });
-    console.log(`${timestamp} - ${msg}`);
-  }
+    log(msg: string) {
+        const timestamp = new Date().toISOString();
+        this.logs.push({ msg, timestamp });
+        console.log(`${timestamp} - ${msg}`);
+    }
 }
 
 // Also we can create Singleton instance and in every file create new instance from this

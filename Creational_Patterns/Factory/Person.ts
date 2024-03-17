@@ -1,13 +1,13 @@
 class Person {
-  public name: string;
+    public name: string;
 
-  constructor(name = "unnamed") {
-    this.name = name;
-  }
+    constructor(name = "unnamed") {
+        this.name = name;
+    }
 
-  toString() {
-    return JSON.stringify(this);
-  }
+    toString() {
+        return JSON.stringify(this);
+    }
 }
 
 export default Person;

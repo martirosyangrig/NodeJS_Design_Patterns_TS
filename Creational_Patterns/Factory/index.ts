@@ -4,10 +4,10 @@ import userFactory from "./userFactory";
 
 const alex = userFactory("Alex Banks", 100) as Shopper;
 const eve = userFactory(
-  "Eve Porcello",
-  100,
-  "employee",
-  "This and That"
+    "Eve Porcello",
+    100,
+    "employee",
+    "This and That"
 ) as Employee;
 
 eve.payDay(500);
