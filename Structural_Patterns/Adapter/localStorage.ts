@@ -23,7 +23,8 @@ class LocalStorage {
 
   setItem(key: string, value: unknown) {
     this.items[key] = value;
-    writeFile("localStorageFILE.json", JSON.stringify(this.items), (error) => {
+    const jsonContent = JSON.stringify(this.items);
+    writeFile("localStorageFILE.json", jsonContent, (error) => {
       if (error) console.error(error);
     });
   }
