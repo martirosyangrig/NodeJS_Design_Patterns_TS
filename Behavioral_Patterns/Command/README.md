@@ -1,0 +1,3 @@
+The Command pattern is a behavioral design pattern that encapsulates a request as an object, thereby allowing parameterization of clients with queues, requests, and operations. This pattern allows the requester to be decoupled from the object that performs the action. It can also support undoable operations.
+
+You can see how we created console based application with commands to create and delete files , also u can add new commands improving it more and more
