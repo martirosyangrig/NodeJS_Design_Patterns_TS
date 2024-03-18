@@ -11,7 +11,8 @@
       "strict": true,
       "skipLibCheck": true,
       "moduleResolution": "Node",
-      "strictPropertyInitialization": false
+      "strictPropertyInitialization": false,
+      "resolveJsonModule": true,
     },
     "ts-node": {
       "files": true
